@@ -1,0 +1,86 @@
+{
+  "jobExecutionId": 5,
+  "stepExecution": {
+    "id": 7,
+    "version": 2,
+    "stepName": "Stage1",
+    "status": "FAILED",
+    "readCount": 0,
+    "writeCount": 0,
+    "commitCount": 0,
+    "rollbackCount": 1,
+    "readSkipCount": 0,
+    "processSkipCount": 0,
+    "writeSkipCount": 0,
+    "startTime": "2019-03-07T10:15:03.897Z",
+    "endTime": "2019-03-07T10:15:06.552Z",
+    "lastUpdated": "2019-03-07T10:15:06.552Z",
+    "executionContext": {
+      "dirty": true,
+      "empty": false,
+      "values": [
+        {
+          "batch.taskletType": "de.ubs.xdm3.batch.ant.runner.AntTasklet"
+        },
+        {
+          "batch.stepType": "org.springframework.batch.core.step.tasklet.TaskletStep"
+        },
+        {
+          "execution-output-list": "http://localhost:9393/step/6211d76b-2c6a-46e5-9d8b-9df93a26fa1a/output"
+        }
+      ]
+    },
+    "exitStatus": {
+      "exitCode": "FAILED",
+      "exitDescription": "",
+      "running": false
+    },
+    "terminateOnly": false,
+    "filterCount": 0,
+    "failureExceptions": [],
+    "jobParameters": {
+      "parameters": {
+        "-spring.cloud.task.executionid": {
+          "identifying": false,
+          "value": "5",
+          "type": "STRING"
+        },
+        "-stages": {
+          "identifying": false,
+          "value": "*",
+          "type": "STRING"
+        },
+        "run.id": {
+          "identifying": true,
+          "value": 1,
+          "type": "LONG"
+        },
+        "-task-instance-url": {
+          "identifying": false,
+          "value": "/task/subset-task/14/task-instance/42",
+          "type": "STRING"
+        },
+        "-task-name": {
+          "identifying": false,
+          "value": "Task1",
+          "type": "STRING"
+        },
+        "-logging.level.de.ubs.xdm3": {
+          "identifying": false,
+          "value": "INFO",
+          "type": "STRING"
+        }
+      },
+      "empty": false
+    },
+    "jobExecutionId": 5,
+    "skipCount": 0,
+    "summary": "StepExecution: id=7, version=2, name=Stage1, status=FAILED, exitStatus=FAILED, readCount=0, filterCount=0, writeCount=0 readSkipCount=0, writeSkipCount=0, processSkipCount=0, commitCount=0, rollbackCount=1"
+  },
+  "stepType": "de.ubs.xdm3.batch.ant.runner.AntTasklet",
+  "_links": {
+    "self": {
+      "href": "http://localhost:9393/jobs/executions/5/steps/7"
+    }
+  }
+}
